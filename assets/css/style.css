@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: rgb(78, 78, 78);
+  overflow: hidden;
+  width: 100%;
+}
+
+.navigationBar {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.navLink {
+  float: left;
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background-color: aliceblue;
+  color: rgb(78, 78, 78);
+  text-decoration: none;
+}
