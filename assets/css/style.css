@@ -48,7 +48,21 @@ nav {
 /*---------- ABOUT Section --------*/
 .biography {
   overflow: scroll;
-  width: 60%;
   max-height: 60vh;
-  float: right;
+}
+
+
+
+/*----------Contact Section ---------*/
+#contact-form {
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
+input, textarea {
+  width: 70%;
+  min-width: 480px;
 }
