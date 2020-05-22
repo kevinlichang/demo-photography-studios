@@ -10,6 +10,7 @@ body {
   margin: 0;
 }
 
+/*---------- NAVBAR ----------*/
 nav {
   background-color: rgb(78, 78, 78);
   overflow: hidden;
@@ -20,7 +21,6 @@ nav {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 
 .navLink {
   float: left;
@@ -34,4 +34,21 @@ nav {
   background-color: aliceblue;
   color: rgb(78, 78, 78);
   text-decoration: none;
+}
+
+.imgSource {
+  position: absolute;
+  bottom: 3px;
+  right: 5px;
+  color: lightcyan;
+  text-shadow: 1px 1px 7px white;
+  font-size: 11px;
+}  
+
+/*---------- ABOUT Section --------*/
+.biography {
+  overflow: scroll;
+  width: 60%;
+  max-height: 60vh;
+  float: right;
 }
