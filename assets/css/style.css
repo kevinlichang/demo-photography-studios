@@ -62,7 +62,25 @@ label {
   display: block;
 }
 
-input, textarea {
+#contact-form input, #contact-form textarea {
   width: 70%;
   min-width: 480px;
+}
+
+/*----------Resource----------*/
+.card{
+  margin-bottom: 2rem;
+}
+#pdf-guide-block {
+  margin: 4rem 0;
+}
+
+.resource-block{
+  padding: 4rem 0;
+  border-top: gray;
+  border-top-style: solid;
+}
+
+#pexels-search{
+  display: inline-block;
 }

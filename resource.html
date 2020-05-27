@@ -18,13 +18,32 @@
       <a class="navLink" href="resource.html">Resources</a>
     </div>
   </nav>
-  <div class="container">
-    <h2>Resources</h2>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Resources</h1>
+      <hr class="my-4">
+      <p class="lead">Here are some free resources that I find useful!</p>
+    </div>
+  </div>
 
-    <form>
+  <div class="container">
+    <div id="pdf-guide-block">
+      <h3>Digital Photography Basics for Beginners, by Robert Berdan</h3>
+      <p>This is a great beginner's guide to photography, free to use!</p>
+      <a class="btn btn-outline-danger" href="assets/resources/Photography_for_Beginers.pdf" download>Download</a>
+    </div>
+
+    <div class="resource-block" id="gimp-block">
+      <h3>GIMP - GNU Image Manipulation Program</h3>
+      <p>A free, yet powerful Image Editing Software</p>
+      <a class="btn btn-outline-danger" href="https://www.gimp.org/" target="_blank">Website</a>
+    </div>
+
+    <form class="resource-block" id="pexels-block">
+      <h3 id="pexels-title">Pexels API</h3>
       <fieldset>
-        <legend>Pexels - Free Stock Photos</legend>
-        <label for="search-input">
+        <legend>A great place to find free stock photos!</legend>
+        <label for="search-input" id="pexels-search">
           Search for some photos here:
           <input id="search-input" type="text" name="search-input">
         </label>

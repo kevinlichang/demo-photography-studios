@@ -45,10 +45,9 @@ function photoDisplay(response) {
     photographer.setAttribute('href', response.photos[i].photographer_url);
     photographer.setAttribute('target', '_blank');
     photographer.textContent = response.photos[i].photographer;
-
-
-
   }
+  var finished = document.getElementById('pexels-title');
+  finished.scrollIntoView();
 }
 
 
@@ -56,7 +55,7 @@ function photoSearch(){
   document.getElementById('search-submit').addEventListener('click', function(event){
     var req = new XMLHttpRequest();
     var searchInput = document.getElementById('search-input').value;
-    var url = 'https://api.pexels.com/v1/search?query=' + searchInput + "&per_page=16";
+    var url = 'https://api.pexels.com/v1/search?query=' + searchInput + "&per_page=12";
 
     req.open('GET', url, true);
     req.setRequestHeader('Authorization', apiKey);
@@ -71,6 +70,7 @@ function photoSearch(){
     });
     req.send(null);
     event.preventDefault();
+    window.scrollTo()
   });
   
 }
