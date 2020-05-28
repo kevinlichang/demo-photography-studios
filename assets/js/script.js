@@ -12,11 +12,13 @@ function photoDisplay(response) {
     var addCol = document.createElement('div');
     row.appendChild(addCol).className = 'col-4';
     var card = document.createElement('div');
-
-    //append small picture
     addCol.appendChild(card).className = 'card';
+    //append small picture
+    var picLink = document.createElement('a');
+    card.appendChild(picLink).setAttribute('href', response.photos[i].src.original);
+    picLink.setAttribute('target', '_blank');
     var thumbnail = document.createElement('img');
-    card.appendChild(thumbnail).className = 'card-img-top img-fluid';
+    picLink.appendChild(thumbnail).className = 'card-img-top img-fluid';
     thumbnail.setAttribute('src', response.photos[i].src.landscape);
 
     // append links of photo on Pexel and original size 
