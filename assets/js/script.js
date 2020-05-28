@@ -41,7 +41,7 @@ function photoDisplay(response) {
     card.appendChild(photoInfo).className = 'card-body';
     var desc = document.createElement('p');
     photoInfo.appendChild(desc).className = 'card-text';
-    desc.textContent = 'Photo from: '
+    desc.textContent = 'Photo by: '
     var photographer = document.createElement('a');
     photoInfo.appendChild(photographer).className = 'card-link btn btn-outline-success btn-sm';
     photographer.setAttribute('href', response.photos[i].photographer_url);
