@@ -8,6 +8,15 @@ html {
 
 body {
   margin: 0;
+  background-image: url("../images/photography.png");
+}
+
+.gray-grad-bg {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.blue-grad-bg {
+  background: linear-gradient(to left, #268eb1, #eeeeed);
 }
 
 /*---------- NAVBAR ----------*/
@@ -48,9 +57,17 @@ nav {
 /*---------- ABOUT Section --------*/
 .biography {
   overflow: scroll;
-  max-height: 60vh;
+  max-height: 70vh;
 }
 
+.bio-pic {
+  max-height: 70vh;
+}
+
+#listings {
+  margin: 2rem 0;
+  text-align: center;
+}
 
 
 /*----------Contact Section ---------*/
