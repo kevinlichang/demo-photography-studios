@@ -65,7 +65,12 @@ function photoSearch(){
       if(req.status >= 200 && req.status < 400){
         var response = JSON.parse(req.responseText);
         console.log(response);
-        photoDisplay(response);
+        if(response.total_results == 0){
+          var noneMsg = document.getElementById('results');
+          noneMsg.innerHTML = '<h5>No results found, try a different search.</h5>';
+        } else {
+          photoDisplay(response);
+        }
       } else {
         console.log('Request Error: ' + req.statusText);
       }
